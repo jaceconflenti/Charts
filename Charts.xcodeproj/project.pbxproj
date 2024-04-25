@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		00BC23EF0E04E17188344403 /* BarChartDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7184C8A5A60A3522AB9B05 /* BarChartDataProvider.swift */; };
 		02A6E6E1A82A27A66B8D08C4 /* MoveViewJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E162DA8B29D9AEB6A9397 /* MoveViewJob.swift */; };
 		03960E8148C6AEDACE4B77CC /* IMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596963A429D485E3894C4666 /* IMarker.swift */; };
+		0396475E2BDA84290060E997 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 0396475D2BDA84290060E997 /* PrivacyInfo.xcprivacy */; };
 		0511E43EF3FD2CDE7F7F15DB /* ScatterChartDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD37A55B4D85D883E29C744 /* ScatterChartDataProvider.swift */; };
 		05253AFC448C107DEF54C2FE /* CombinedChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52265C1B343CCC41AF2300E3 /* CombinedChartRenderer.swift */; };
 		0529DD51622C8769C1121F90 /* CrossShapeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823F7DB281C6C6F069A69605 /* CrossShapeRenderer.swift */; };
@@ -169,6 +170,7 @@
 /* Begin PBXFileReference section */
 		0108D5925E21A47DA36A66AA /* BarChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarChartData.swift; path = Source/Charts/Data/Implementations/Standard/BarChartData.swift; sourceTree = "<group>"; };
 		0216EDC6A1FE272F4EB19FCF /* ChartDataRendererBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartDataRendererBase.swift; path = Source/Charts/Renderers/ChartDataRendererBase.swift; sourceTree = "<group>"; };
+		0396475D2BDA84290060E997 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Source/Charts/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		04F7B9DF1F2D66E7279771D4 /* PieRadarHighlighter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieRadarHighlighter.swift; path = Source/Charts/Highlight/PieRadarHighlighter.swift; sourceTree = "<group>"; };
 		0619A877C69A95ECCC440A44 /* LineChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineChartView.swift; path = Source/Charts/Charts/LineChartView.swift; sourceTree = "<group>"; };
 		064989451F5C99C7006E8BB3 /* Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Snapshot.swift; path = Tests/Charts/Snapshot.swift; sourceTree = "<group>"; };
@@ -492,6 +494,7 @@
 		865A1CF149F52850CAB7F177 = {
 			isa = PBXGroup;
 			children = (
+				0396475D2BDA84290060E997 /* PrivacyInfo.xcprivacy */,
 				AB2D554102718F209377399E /* Products */,
 				033FD152BB2F906750106A85 /* Frameworks */,
 				20C350D33133A4D89BB365B1 /* Source */,
@@ -738,7 +741,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					A58A4ED274A941CA248EA921 = {
 						LastSwiftMigration = 0900;
@@ -780,6 +783,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0396475E2BDA84290060E997 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1109,6 +1113,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1166,6 +1171,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
